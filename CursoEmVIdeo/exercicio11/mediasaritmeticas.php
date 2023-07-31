@@ -17,13 +17,13 @@
         <h1>Média Aritmética</h1>
         <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
             <label for="valor1">1° Valor</label>
-            <input type="number" name="valor1" id="idvalor1" value="<?php echo $valor1?>">
+            <input type="number" name="valor1" id="idvalor1" value="<?php echo $valor1?> " required>
             <label for="peso1">1° Peso</label>
-            <input type="number" name="peso1" id="idpeso1" value="<?php echo $peso1?>">
+            <input type="number" name="peso1" id="idpeso1" value="<?php echo $peso1?>" required>
             <label for="valor2">2° Valor</label>
-            <input type="number" name="valor2" id="idvalor2" value="<?php echo $valor2?>">
+            <input type="number" name="valor2" id="idvalor2" value="<?php echo $valor2?>" required>
             <label for="peso2">2° Peso</label>
-            <input type="number" name="peso2" id="idpeso2" value="<?php echo $peso2?>">
+            <input type="number" name="peso2" id="idpeso2" value="<?php echo $peso2?>" required>
             <input type="submit" value="Calcular Médias">
         </form>
     </main>

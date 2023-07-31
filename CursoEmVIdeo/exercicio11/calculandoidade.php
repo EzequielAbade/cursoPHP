@@ -9,8 +9,9 @@
 </head>
 <body>
     <main>
-        <?php 
-            $nasceu = $_POST["nasceu"];
+        <?php
+            $atual = date("Y"); 
+            $nasceu = $_POST["nasceu"] ?? $atual;
             $ano = $_POST["ano"];
         ?>
         <h1>Calculando a sua idade</h1>
@@ -20,6 +21,7 @@
             <label for="ano">Quer saber sua idade em que ano?</label>
             <input type="number" name="ano" id="idano">
             <input type="submit" value="Qual será minha idade?">
+            <p>Atualmente estamos em <strong><?php echo $atual ?></strong></p>
         </form>
     </main>
     <section>

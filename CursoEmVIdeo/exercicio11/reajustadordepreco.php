@@ -17,8 +17,10 @@
         <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
             <label for="preco">Preço do produto(R$)</label>
             <input type="number" name="preco" id="idpreco">
-            <label for="percentual">Qual será o percentual de reajuste ?</label>
-            <input type="number" name="percentual" id="idpercentual">
+            <label for="reaj">Qual será o percentual de reajuste ?
+                (<strong><span id ="p">?</span>%</strong>)
+            </label>
+            <input type="range" name="reaj" id="reaj" min="0" max="100" step="1" oninput="mudaValor()">
             <input type="submit" value="Reajustar">
         </form>
     </main>
@@ -31,6 +33,13 @@
             echo "O produto que custava $precoformatado, com <strong> $percentual de aumento </strong> vai passar a custa <strong> R$ $reajusteformatado </strong> a partir de agora."
         ?>
     </section>
+    <script>
+        // Declarações Automáticas
+        mudarValor()
+        function mudarValor(){
+            p.innerText = reaj.value;
+        }
+    </script>
     
 </body>
 </html>

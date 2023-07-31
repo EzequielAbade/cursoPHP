@@ -17,14 +17,14 @@
         $valor = $_GET["valor"];
         $resultado = $valor / $cotacao;
         $formatado = number_format($resultado, 2);
-        $dataHora = $dados["value"][0] ["dataHoraCotacao"];
+        $dataHora = $dados["value"][0]["dataHoraCotacao"];
         
 
         echo "O valor que tem é: <strong> $valor </strong>";
         echo "<br> cotação do dia $dataHora é: $cotacao";
         echo "<br> O seu valor hoje em USD é: $formatado"
     ?>
-    <p><a href="javascript:history.go(-1)">Votar para a página anterior</a></p>
+    <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 RewriteEngine on
 Options -indexes
-RewriteBase /blog
+RewriteBase /cursoPHP/blog
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-l

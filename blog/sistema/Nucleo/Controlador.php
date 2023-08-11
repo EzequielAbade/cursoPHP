@@ -1,8 +1,14 @@
 <?php 
     namespace sistema\Nucleo;
+
+    use sistema\Suporte\Template;
+
     class controlador{
-    public function __construct(string $tema){
-        echo $tema;
+
+    protected Template $template;
+
+    public function __construct(string $diretorio){
+        $this->template = new Template($diretorio);
     }
 }
 ?>

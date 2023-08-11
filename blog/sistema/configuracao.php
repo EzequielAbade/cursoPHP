@@ -5,6 +5,7 @@
     define('SITE_DESCRICAO', 'ABADES BLOG');
     define('URL_PRODUCAO', 'http://blogdoabade.com.br');
     define('URL_DESENVOLVIMENTO','http://localhost:9090/cursoPHP/blog');
+    define('URL_SITE', '/cursoPHP/blog/');
 
     echo "conectado com sucesso!";
     try {

@@ -35,7 +35,9 @@
                         $nome = $linha["nome"];
                         $senha = $linha["senha"];
                         $id = $linha["id"];
-                        echo "<tr><td>$nome</td><td>$senha</td><td><a href='formEditar.php?id=$id'>Editar</a>-<a href='excluir.PHP?id=$id'>Excluir</td></tr>";
+                        echo "<tr><td>$nome</td>
+                              <td>$senha</td>
+                              <td><a href='formEditar.php?id=$id'>Editar</a>-<a href='excluir.PHP?id=$id'>Excluir</td></tr>";
 
                     }
                 ?>

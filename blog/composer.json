@@ -1,0 +1,26 @@
+{
+    "name": "php/blogdoabade",
+    "description": "Um blog simples para bater papo",
+    "type": "projeto",
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        }, 
+        "files": [
+            "sistema/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ezequiel Abade",
+            "email": "krauser_ezequiel@hotmail.com",
+            "homepage": "https://github.com/EzequielAbade",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 8.0",
+        "pecee/simple-router": "dev-master"
+    }
+}

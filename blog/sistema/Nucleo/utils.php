@@ -1,4 +1,5 @@
 <?php 
+    namespace sistema\Nucleo;
 
 class utils{
     /** */
@@ -51,7 +52,7 @@ class utils{
     }
 
     /** */
-    public static function url(string $url){
+    public static function url(string $url = null){
         $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
         $ambiente = ($servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
 

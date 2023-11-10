@@ -1,0 +1,156 @@
+/* global */
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+    
+.row {
+    margin: 0px;
+}
+.container {
+    padding: 90px 0;
+}
+li {
+    color: 444;
+    font-size: 18px;
+}
+
+/* barra */
+header, .navbar {
+    background-color: #ffffff;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#navbar-links a {
+    color: #fff;
+}
+
+/* Texto */
+.area1, .area2, .area3 {
+    /* background-color: white; */
+    padding: 250px 50px 800px 50px; 
+    justify-content: center;
+    text-align: center;  
+    place-items: center; 
+}
+
+.pag1 {
+    background-color: #ADD8E6;
+}
+.pag2{
+    background-color: #87CEEB;
+}
+.pag3 {
+    background-color: #87CEFA;
+}
+.pag4 {
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to left, rgb(145, 145, 228), rgb(255, 255, 255), rgb(109, 27, 27));
+    background-size: 500% 100%;
+    animation: degradeanimado 6s infinite alternate;
+ }
+ .projeto {
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.card {
+    background-color: rgb(255, 255, 255);
+}
+
+
+ @keyframes degradeanimado{
+    0%{
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+.sobre-mim {
+    text-align: start;
+    padding: 50px 50px 50px 50px;
+    justify-content: start;
+    font-size: 100%;
+    letter-spacing: 4px;
+}
+.section1 {
+    height: 10vh;
+    justify-content: center;
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+section {
+    height: 100vh;
+    justify-content: center;
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.img-fluid {
+    width: 450px;
+    
+   
+}
+.img-fluid, .sobre-mim {
+    display: inline-block;
+}
+.col-12 {
+    text-align: center;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    
+}
+
+.col-12::after {
+    content: "";
+    border-bottom: 2px solid black;
+    width: 9%;
+    position: absolute;
+    bottom: 755px;
+    left: 45.5%;
+}
+
+.linguagens {
+    margin: 0;
+    text-align: center;
+    
+}
+.projetos {
+    text-align: center;
+}
+
+.javascript, .php, .html, .css {
+    font-weight: bold;
+}
+.card {
+    align-content: center;
+    display: inline-block;
+}
+
+.github {
+
+    color: blue;
+    font-weight: bold;
+}
+
+.contato {
+    background-color: blue;
+}
+.card-title, .card-body {
+    text-align: center;
+}
+
+

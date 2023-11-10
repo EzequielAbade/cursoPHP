@@ -12,14 +12,14 @@
         }
         public function index(){
             echo $this->template->renderizar('index.html', [
-                'titulo' => 'Teste de titulo index',
+                'titulo' => 'Pagina index',
                 'subtitulo' => 'teste de subtitulo index'
             ]);
         }
 
         public function sobre(){
             echo $this->template->renderizar('sobre.html', [
-                'titulo' => 'Teste de titulo sobre',
+                'titulo' => 'Pagina sobre-nós',
                 'subtitulo' => 'teste de sobre'
             ]);
         }

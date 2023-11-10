@@ -52,7 +52,7 @@ class utils{
     }
 
     /** */
-    public static function url(string $url = null){
+    public static function url(string $url  = null){
         $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
         $ambiente = ($servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
 
@@ -146,7 +146,7 @@ class utils{
     /**
     * função de saudação
     * @param date $hora hora do sistema
-    *
+     *
     */
     public static function saudacao(){
         
